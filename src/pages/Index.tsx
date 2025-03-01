@@ -39,7 +39,7 @@ const Index = () => {
   return (
     <div className="flex">
       <Navbar />
-      
+
       <div className="flex-1 p-8 ml-64 animate-fade-in">
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 mb-10 items-center">
@@ -68,7 +68,7 @@ const Index = () => {
                 </Button>
               </div>
             </div>
-            
+
             <div className="bg-secondary/50 rounded-xl p-6 relative">
               <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent rounded-xl" />
               <div className="relative">
@@ -84,7 +84,7 @@ const Index = () => {
                   </div>
                   <div className="text-sm text-muted-foreground">Active</div>
                 </div>
-                
+
                 <div className="grid grid-cols-2 gap-3 mb-4">
                   <Card>
                     <CardContent className="p-4">
@@ -99,7 +99,7 @@ const Index = () => {
                     </CardContent>
                   </Card>
                 </div>
-                
+
                 <div className="flex items-center justify-between gap-4">
                   <Button asChild variant="secondary" size="sm" className="w-full justify-start gap-2">
                     <Link to="/dashboard">
@@ -136,7 +136,7 @@ const Index = () => {
                   </Button>
                 </CardFooter>
               </Card>
-              
+
               <Card>
                 <CardHeader>
                   <CardTitle>Step 2: Configure Settings</CardTitle>
@@ -152,7 +152,7 @@ const Index = () => {
                   </Button>
                 </CardFooter>
               </Card>
-              
+
               <Card>
                 <CardHeader>
                   <CardTitle>Step 3: Analyze Responses</CardTitle>
@@ -179,11 +179,11 @@ const Index = () => {
                 <TabsTrigger value="checkout">Checkout</TabsTrigger>
                 <TabsTrigger value="thankyou">Thank You Page</TabsTrigger>
               </TabsList>
-              
+
               <TabsContent value="cart">
                 <div className="border rounded-lg p-6 bg-card">
                   <div className="max-w-md mx-auto">
-                    <SurveyForm 
+                    <SurveyForm
                       title={sampleSurvey.title}
                       description={sampleSurvey.description}
                       questions={sampleSurvey.questions}
@@ -191,7 +191,7 @@ const Index = () => {
                   </div>
                 </div>
               </TabsContent>
-              
+
               <TabsContent value="checkout">
                 <div className="border rounded-lg p-12 bg-card flex items-center justify-center">
                   <div className="text-center">
@@ -205,7 +205,7 @@ const Index = () => {
                   </div>
                 </div>
               </TabsContent>
-              
+
               <TabsContent value="thankyou">
                 <div className="border rounded-lg p-12 bg-card flex items-center justify-center">
                   <div className="text-center">
